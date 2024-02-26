@@ -1,0 +1,71 @@
+                               /* RESET */
+
+menu,
+ul,
+ol{
+    list-style: none;
+}
+
+                          /* LAYOUT */
+
+#app{
+    height: 100vh;
+}
+
+                             /* STYLE */
+
+.sidebar{
+    width: 70px;
+}
+
+.body-content{
+
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+
+                             /* MEDIA */
+
+@media (min-width: 566px){
+
+}
+
+
+@media (min-width: 758px) {
+
+}
+
+
+@media (min-width: 1190px) {
+    .sidebar{
+        width: 150px;
+    }
+}
+
+
+                          /* DEBUG */
+
+.debug .row{
+    background-color: blueviolet;
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+}
+
+.debug .col{
+    background-color: rgb(17, 93, 55);
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+
+}
+
+.debug .container{
+    background-color: rgb(209, 119, 29);
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+
+}
+
+
