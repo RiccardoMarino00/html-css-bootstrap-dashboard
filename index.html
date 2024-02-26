@@ -4,44 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/cf3b3313c9.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="debug">
     <div id="app">
-        <section>
-            <nav class="row">
-                <div class="col">Logo</div>
-                <div class="col"><input type="text"></div>
+
+                                                   <!-- HEADER/NAV -->
+
+        <section class="bg-light">
+            <nav class="row  p-3">
+                <div class="col-auto mx-2">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="col-auto"><span><i class="fa-solid fa-magnifying-glass"></i></span></div>
+                <div class="col-auto flex-grow-1"><input type="text" placeholder="Prova a cercare: Lezioni di Laravel" class="d-inline-block w-100"></div>
                 
-                <div class="col">
+                <div class="col-auto ">
                     <ul class="d-flex">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li class="px-2"><a href="#"><i class="fa-solid fa-list-ul"></i></a></li>
+                        <li class="px-2"><a href="#"><i class="fa-solid fa-circle-question"></i></a></li>
+                        <li class="px-2"><a href="#"></a><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        <li class="px-2"><a href="#"></a><i class="fa-solid fa-bell"></i></li>
                     </ul>
                 </div>
-                
             </nav>
         </section>
-            <main>
-             <div class="row">
-                <div class="col-auto sidebar flex-shrink-0">sidebar
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                    </ul>
 
-                    <div>admin</div>
+                                                         <!-- MAIN -->
+
+            <main>
+             <div class="row flex-nowrap">      
+                                         <!-- SIDEBAR -->
+                <div class="col-auto sidebar flex-shrink-0">
+                    <div class="row flex-column">
+                     <ul class="flex-grow-1">
+                        
+                        <li><span class="icon-sidebar"><i class="fa-solid fa-house"></i></span><span class="name-sidebar d-none d-lg-inline-block">Home</span></li>
+                        <li><span class="icon-sidebar "><i class="fa-solid fa-chart-simple"></i></span><span class="name-sidebar d-none d-lg-inline-block">Stats</span></li>
+                        <li><span class="icon-sidebar"><i class="fa-solid fa-signal"></i></span><span class="name-sidebar d-none d-lg-inline-block">Signals</span></li>
+                     </ul>
+
+                     <div class=""><span class="icon-sidebar"><i class="fa-solid fa-gear"></i></span><span class="name-sidebar d-none d-lg-inline-block">admin</span></div>
+                    </div>
+                    
                 </div>
+                                         <!-- BODY -->
                 <div class="col-auto body-content flex-grow-1">
                     <div class="row flex-column">
-                        <div class="col d-flex">
-                            <div>logo</div>
-                            <div>studenti</div>
-                            <div>nuovo studente</div>
+                        <div class="col d-flex justify-content-between text-start">
+                            <h3 class="col-3">Boolean <span class="fs-6">Piano blaze</span></h3>
+                            <div class="col-3">Studenti online negli ultimi 30 minuti</div>
+                            <div class="col-3">Nuovo studente <span>+</span></div>
+                        </div>
+
+                        <div class="col d-flex justify-content-between text-start">
+                            <h3 class="col-3 fs-6"> <span>3 app</span> <span class="d-none d-lg-inline-block">Boolean mobile app</span> <span class="d-none d-lg-inline-block">Boolean web app</span> <span class="d-none d-lg-inline-block">Boolean blog app</span> <span class="d-lg-none">+</span> </h3>
+                            <div class="col-3 fs-3">125</div>
+                            <div class="col-3"></div>
                         </div>
                         <div class="col">
                             <div class="row">

@@ -22,10 +22,18 @@ ol{
 
 }
 
+
 .row{
     --bs-gutter-x: 0;
 }
 
+                         /* NAV */
+
+.fa-list-ul,
+.fa-circle-question,
+.fa-ellipsis-vertical{
+    display: none;
+}
 
                              /* MEDIA */
 
@@ -43,13 +51,19 @@ ol{
     .sidebar{
         width: 150px;
     }
+
+    .fa-list-ul,
+    .fa-circle-question,
+    .fa-ellipsis-vertical{
+        display: inline-block;
+}
 }
 
 
                           /* DEBUG */
 
 .debug .row{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     /* border: 1px solid black; */
     /* padding: 10px; */
 }
