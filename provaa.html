@@ -146,7 +146,47 @@
 
 
 
+    <header class="sidebar my-2">
+      <nav class="nav-sidebar">
+          <ul class="d-flex flex-column ul-sidebar gap-2 p-2">
+              <li><button type="button" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-house"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Home</span></button></li>
+              <li><button type="button" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-chart-simple"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Stats</span></button></li>
+              <li><button type="button" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-signal"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Signals</span></button></li>
+              <li><button type="button" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-gear"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Admin</span></button></li>                         
+          </ul>
+      </nav>             
+    </header>
 
+    
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+  </div>
+</div>
+
+<form action="" method="post">
+  <h4>Inserisci un nuovo studente</h4>
+  <div class="d-inline-block">
+    <label for="name" class="d-block">Nome</label>
+    <input type="text" id="name">
+  </div>  
+
+  <div class="d-inline-block">
+    <label for="cognome" class="d-block">Cognome</label>
+    <input type="text" id="cognome">
+  </div>
+
+   
+  
+  
+</form>
 
 
 
