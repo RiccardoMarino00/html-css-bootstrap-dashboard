@@ -1,20 +1,20 @@
 
 .app-tool{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 
 .header-main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .body-main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .col-4,
 .col-6{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 menu,
@@ -71,6 +71,7 @@ ol{
     background-image: url(../img/sidebar-bg.png);
     background-repeat: no-repeat;
     max-width: 100%;
+    height: calc(100% - 60px);
 }
 
 /* HEADER BODY */
@@ -78,6 +79,40 @@ ol{
 .tre-app{
     font-size: 14px;
 }
+
+.header-main{
+    background-color: #1b72e8
+}
+
+.main-content{
+    background-color: #f8f9fa;
+}
+
+.app-body{
+    max-width: 100%;
+}
+
+.matita,
+.cestino{
+    color: lightgray;
+}
+
+.table{
+    font-size: 15px;
+}
+
+.col-6{
+    /* max-height: calc(100% - 60px); */
+}
+
+.fa-bell{
+    color: #ff8f00;
+}
+
+.icon-app-tool{
+    color: rgb(165, 161, 161);
+}
+
 
 
 
