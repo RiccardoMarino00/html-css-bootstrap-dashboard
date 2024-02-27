@@ -70,7 +70,15 @@ ol{
     background-color: #13293f;
     background-image: url(../img/sidebar-bg.png);
     background-repeat: no-repeat;
+    max-width: 100%;
 }
+
+/* HEADER BODY */
+
+.tre-app{
+    font-size: 14px;
+}
+
 
 
 
