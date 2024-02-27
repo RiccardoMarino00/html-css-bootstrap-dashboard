@@ -52,6 +52,9 @@ ol{
 
 /* SIDEBAR */
 
+/* .sidebar{
+    position: fixed;
+} */
 
 .fa-gear{
     margin-top: auto;
@@ -118,8 +121,8 @@ ol{
     height: 100% ;
 }
 
-.main{
-    overflow-y: auto;
+.main-content{
+    overflow-y: scroll;
 }
 
 
