@@ -26,8 +26,17 @@ ol{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /* ASIDE */
+
+.icon-aside{
+    padding-top: 6px;
+    
+}
 
 .logo-mobile{
     width: 50px;
@@ -52,9 +61,9 @@ ol{
 
 /* SIDEBAR */
 
-/* .sidebar{
-    position: fixed;
-} */
+.gear{
+    margin-top: auto;
+}
 
 .fa-gear{
     margin-top: auto;
@@ -74,10 +83,15 @@ ol{
     background-image: url(../img/sidebar-bg.png);
     background-repeat: no-repeat;
     max-width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
 }
 
 /* HEADER BODY */
+
+.plus:hover{
+    background-color: white;
+    color: black;
+}
 
 .tre-app{
     font-size: 14px;
@@ -91,10 +105,10 @@ ol{
     background-color: #f8f9fa;
 }
 
-.app-body{
+/* .app-body{
     max-width: 100%;
-    height: 100%;
-}
+    height: calc(100% - 60px);
+} */
 
 .matita,
 .cestino{
@@ -118,11 +132,12 @@ ol{
 }
 
 .app-body{
-    height: 100% ;
+    height: calc(100% - 60px) ;
 }
 
 .main-content{
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 

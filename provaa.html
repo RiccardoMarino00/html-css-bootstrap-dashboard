@@ -159,7 +159,7 @@
 
     
 
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bell"></i></button>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
@@ -167,69 +167,101 @@
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-     ciao
+    <form action="" method="post">
+      <h4>Inserisci un nuovo studente</h4>
+      <div class="d-inline-block">
+        <label for="name" class="d-block">Nome</label>
+        <input type="text" id="name">
+      </div>  
+    
+      <div class="d-inline-block">
+        <label for="cognome" class="d-block">Cognome</label>
+        <input type="text" id="cognome">
+      </div> <br>
+    
+      <div class="d-inline-block">
+        <label for="email" class="d-block">Email</label>
+        <input type="email" id="email">
+      </div>
+    
+      <div class="d-inline-block">
+        <label for="password" class="d-block">Password</label>
+        <input type="password" id="password">  
+      </div> <br>
+    
+      <div class="d-inline-block">
+        <label for="email2" class="d-block">Indirizzo email</label>
+        <input type="email" id="email2">
+      </div>
+    
+      <div class="d-inline-block">
+        <label for="password" class="d-block">Password</label>
+        <input type="password" id="password"> 
+      </div>  <br>
+    
+      <div class="d-block">
+        <label for="Indirizzo" class="d-block">Indirizzo </label>
+        <input type="text" id="Indirizzo">
+      </div>
+    
+      <div class="d-inline-block">
+        <label for="città" class="d-block">Città</label>
+        <input type="text" id="città"> 
+      </div>
+    
+    
+      <div class="d-inline-block">
+        <label for="Stato" class="d-block">Stato</label>
+        <select id="Stato">
+         <option value="volvo">Italia</option>
+         <option value="saab">Francia</option>
+         <option value="opel">Albania</option>
+         <option value="audi">Irlanda</option>
+        </select>
+      </div>
+    
+      <div class="d-inline-block">
+        <label for="CAP" class="d-block">CAP</label>
+        <input type="text" id="CAP"> 
+      </div>
+    
+      <div class="d-block">
+        <input type="checkbox">Seleziona per proseguire
+      </div>
+    
+      <div>
+        <button type="button" class="btn btn-primary">Salva</button>
+        <button type="button" class="btn btn-warning">Svuota</button>
+      </div>
+      
+    </form>
   </div>
 </div>
 
-<form action="" method="post">
-  <h4>Inserisci un nuovo studente</h4>
-  <div class="d-inline-block">
-    <label for="name" class="d-block">Nome</label>
-    <input type="text" id="name">
-  </div>  
 
-  <div class="d-inline-block">
-    <label for="cognome" class="d-block">Cognome</label>
-    <input type="text" id="cognome">
-  </div> <br>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+  Popover on left
+</button>
 
-  <div class="d-inline-block">
-    <label for="email" class="d-block">Email</label>
-    <input type="email" id="email">
-  </div>
+<button class="btn" type="button" data-bs-toggle="popover" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bell"></i></button>
 
-  <div class="d-inline-block">
-    <label for="password" class="d-block">Password</label>
-    <input type="password" id="password">  
-  </div> <br>
-
-  <div class="d-inline-block">
-    <label for="email2" class="d-block">Indirizzo email</label>
-    <input type="email" id="email2">
-  </div>
-
-  <div class="d-inline-block">
-    <label for="password" class="d-block">Password</label>
-    <input type="password" id="password"> 
-  </div>  <br>
-
-  <div class="d-block">
-    <label for="Indirizzo" class="d-block">Indirizzo </label>
-    <input type="text" id="Indirizzo">
-  </div>
-
-  <div class="d-inline-block">
-    <label for="città" class="d-block">Città</label>
-    <input type="text" id="città"> 
-  </div>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+  Popover on right
+</button>
 
 
-  <div class="d-inline-block">
-    <label for="Stato" class="d-block">Stato</label>
-    <select id="Stato">
-     <option value="volvo">Italia</option>
-     <option value="saab">Francia</option>
-     <option value="opel">Albania</option>
-     <option value="audi">Irlanda</option>
-    </select>
-  </div>
 
-  <div class="d-inline-block">
-    <label for="CAP" class="d-block">CAP</label>
-    <input type="text" id="CAP"> 
-  </div>
-  
-</form>
+
+
+
+<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Button with data-bs-target
+</button> -->
+
+
+
+
+
 
  
 

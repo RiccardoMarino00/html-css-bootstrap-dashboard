@@ -21,24 +21,26 @@
                     <span>
                         <i class="fa-solid fa-magnifying-glass search-bar-icon"></i>
                     </span>
-                    <input type="text" class="search-bar-input" >
+                    <input type="text" class="search-bar-input w-100 px-5 border rounded" >
                 </div>
                 <ul class="d-flex mb-0 gap-3">
-                    <li class="d-none d-lg-block"><a href="#"><i class="fa-solid fa-list-ul icon-app-tool"></i></a></li>
-                    <li class="d-none d-lg-block"><a href="#"><i class="fa-solid fa-circle-question icon-app-tool"></i></a></li>
-                    <li class="d-none d-lg-block"><a href="#"><i class="fa-solid fa-ellipsis-vertical icon-app-tool"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                    <li class="d-none d-lg-block icon-aside"><a href="#"><i class="fa-solid fa-list-ul icon-app-tool"></i></a></li>
+                    <li class="d-none d-lg-block icon-aside"><a href="#"><i class="fa-solid fa-circle-question icon-app-tool"></i></a></li>
+                    <li class="d-none d-lg-block icon-aside"><a href="#"><i class="fa-solid fa-ellipsis-vertical icon-app-tool"></i></a></li>
+                    <li>
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bell"></i></button>
+                    </li>
                 </ul>
             </div>
         </aside>
         <div class="app-body d-flex flex-grow-1 text-white">
-            <header class="sidebar  my-2">
-                <nav class="nav-sidebar">
-                    <ul class="d-flex flex-column ul-sidebar gap-1 ps-0 ">
+            <header class="sidebar">
+                <nav class="nav-sidebar h-100">
+                    <ul class="d-flex flex-column ul-sidebar gap-1 ps-0 h-100 ">
                         <li><button type="button" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-house"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Home</span></button></li>
                         <li><button type="button" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-chart-simple"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Stats</span></button></li>
                         <li><button type="button" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-signal"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Signals</span></button></li>
-                        <li><button type="button" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-gear"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Admin</span></button></li>                        
+                        <li class="gear"><button type="button gear" class="btn btn-outline-secondary text-white border-0"><span class="icon-sidebar px-1"><i class="fa-solid fa-gear"></i></span><span class="name-sidebar d-none d-lg-inline-block text-white">Admin</span></button></li>                        
                     </ul>
                    
                         
@@ -47,7 +49,7 @@
               </header>
             <main class="main-content flex-grow-1 text-dark py-2 ">
                 <div>
-                    <div class="header-main d-flex justify-content-between text-align-center text-white flex-column flex-md-row p-2">
+                    <div class="header-main d-flex justify-content-between text-align-center text-white flex-column flex-md-row p-2 sticky-top">
                         <div class="col-4">
                             <div>
                                 <h3 class="d-inline-block">Boolean</h3> <span class="badge rounded-pill bg-secondary">Piano blaze</span>
@@ -64,7 +66,10 @@
                         </div>
 
                         <div class="col-4 ">
-                            <p>Nuovo studente <a href="#"><span class="border border-light rounded fs-6 text-white">+</span></a></p>
+                            <p>Nuovo studente <button class="btn d-inline-block " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><a href="#" class="text-decoration-none"><span class="border border-light rounded fs-6 text-white plus">+</span></a></button></p> 
+
+                            
+
                         </div>
 
                     </div>
@@ -349,7 +354,83 @@
         </div>
     </div>
 
-    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form action="" method="post">
+            <h4>Inserisci un nuovo studente</h4>
+            <div class="d-inline-block">
+              <label for="name" class="d-block">Nome</label>
+              <input type="text" id="name" placeholder="" class="border rounded">
+            </div>  
+          
+            <div class="d-inline-block">
+              <label for="cognome" class="d-block">Cognome</label>
+              <input type="text" id="cognome" placeholder="" class="border rounded">
+            </div> <br>
+          
+            <div class="d-inline-block">
+              <label for="email" class="d-block">Email</label>
+              <input type="email" id="email" placeholder="" class="border rounded">
+            </div>
+          
+            <div class="d-inline-block">
+              <label for="password" class="d-block">Password</label>
+              <input type="password" id="password" placeholder="" class="border rounded">  
+            </div> <br>
+          
+            <div class="d-inline-block">
+              <label for="email2" class="d-block">Indirizzo email</label>
+              <input type="email" id="email2" placeholder="" class="border rounded">
+            </div>
+          
+            <div class="d-inline-block">
+              <label for="password" class="d-block">Password</label>
+              <input type="password" id="password" placeholder="" class="border rounded"> 
+            </div>  <br>
+          
+            <div class="d-block">
+              <label for="Indirizzo" class="d-block">Indirizzo </label>
+              <input type="text" id="Indirizzo" placeholder="" class="border rounded">
+            </div>
+          
+            <div class="d-inline-block">
+              <label for="città" class="d-block">Città</label>
+              <input type="text" id="città" placeholder="" class="border rounded"> 
+            </div>
+          
+          
+            <div class="d-inline-block">
+              <label for="Stato" class="d-block">Stato</label>
+              <select id="Stato" class="border rounded">
+               <option value="volvo">Italia</option>
+               <option value="saab">Francia</option>
+               <option value="opel">Albania</option>
+               <option value="audi">Irlanda</option>
+              </select>
+            </div>
+          
+            <div class="d-inline-block">
+              <label for="CAP" class="d-block">CAP</label>
+              <input type="text" id="CAP" class="border rounded"> 
+            </div>
+          
+            <div class="d-block">
+              <input type="checkbox" class="border rounded">Seleziona per proseguire
+            </div>
+          
+            <div>
+              <button type="button" class="btn btn-primary">Salva</button>
+              <button type="button" class="btn btn-warning">Svuota</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+      
     
       
 
